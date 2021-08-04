@@ -15,7 +15,7 @@ def result():
     var_2 = request.form.get("var_2", type=int)
     operation = request.form.get("operation")
 
-    #bug #1
+    # bug#1
     if operation == 'Addition':
         result = var_1 + var_2 + 1
 
@@ -25,8 +25,9 @@ def result():
     elif operation == 'Division':
         result = var_1 * var_2
 
+    # bug#2
     elif operation == 'Multiplication':
-        result = var_1 / var_2
+        result = var_1 / 0
     else:
         result = 'INVALID CHOICE'
     entry = result
