@@ -16,7 +16,7 @@ def result():
     operation = request.form.get("operation")
 
     if(operation == 'Addition'):
-        result = var_1 + var_2
+        result = var_1 + var_2 + 1
 
     elif(operation == 'Subtraction'):
         result = var_1 - var_2
