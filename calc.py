@@ -14,10 +14,13 @@ def result():
     var_1 = request.form.get("var_1", type=int)
     var_2 = request.form.get("var_2", type=int)
     operation = request.form.get("operation")
+
     if(operation == 'Addition'):
         result = var_1 + var_2
+
     elif(operation == 'Subtraction'):
         result = var_1 - var_2
+
     elif(operation == 'Multiplication'):
         result = var_1 * var_2
     elif(operation == 'Division'):
