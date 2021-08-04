@@ -15,20 +15,23 @@ def result():
     var_2 = request.form.get("var_2", type=int)
     operation = request.form.get("operation")
 
-    if(operation == 'Addition'):
+    #bug #1
+    if operation == 'Addition':
         result = var_1 + var_2 + 1
 
-    elif(operation == 'Subtraction'):
+    elif operation == 'Subtraction':
         result = var_1 - var_2
 
-    elif(operation == 'Multiplication'):
+    elif operation == 'Division':
         result = var_1 * var_2
-    elif(operation == 'Division'):
+
+    elif operation == 'Multiplication':
         result = var_1 / var_2
     else:
         result = 'INVALID CHOICE'
     entry = result
     return render_template('result.html', entry=entry)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
