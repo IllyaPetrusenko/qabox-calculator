@@ -11,7 +11,7 @@ def welcome():
 
 @app.route('/result', methods=['POST'])
 def result():
-    var_1 = request.form.get("var_1", type=int)
+    var_1 = request.form.get("var_1", type=float)
     var_2 = request.form.get("var_2", type=int)
     operation = request.form.get("operation")
 
