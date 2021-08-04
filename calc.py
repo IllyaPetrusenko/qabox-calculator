@@ -27,7 +27,7 @@ def result():
 
     # bug#2
     elif operation == 'Multiplication':
-        result = var_1 / 0
+        result = var_2 / var_1
     else:
         result = 'INVALID CHOICE'
     entry = result
